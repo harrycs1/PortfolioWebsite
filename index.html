@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Harry Daniels">
+  <meta name="description" content="Harry Daniels is a self-taught software engineer currently based in London.">
+    
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+    
+  <meta property="og:title" content="Harry Daniels">
+  <meta property="og:image" content="https://i.imgur.com/EAY96H4.jpeg">
+  <meta property="og:description" content="Harry Daniels is a self-taught software engineer currently based in London.">
+  <meta property="og:title" content="Harry Daniels">
+  <meta property="og:url" content="https://harrydaniels.com/">
+
+  <meta property="twitter:title" content="Harry Daniels">    
+  <meta property="twitter:image" content="https://i.imgur.com/EAY96H4.jpeg">
+  <meta property="twitter:description" content="Harry Daniels is a self-taught software engineer currently based in London.">
+  <meta property="twitter:title" content="Harry Daniels">
+  <meta property="twitter:url" content="https://harrydaniels.com/">
+    
+  <title> Harry Daniels </title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body id="bodyScroll">
+  <!-- Nav Section -->
+  <div id="divOverlay" onclick="closeNav()"></div>
+  <header>
+    <nav>
+      <div class="topnav">
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li id="cv">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"> CV <a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class=sidenav-header>
+    <div class="menu-btn" onclick="openNav()">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <div class="sidenav" id="mySidenav">
+      <a href="#about" onclick="closeNav()">01. <p>About</p></a>
+      <a href="#experience" onclick="closeNav()">02. <p>Experience</p></a>
+      <a href="#projects" onclick="closeNav()">03. <p>Projects</p></a>
+      <a href="#contact" onclick="closeNav()">04. <p>Contact</p></a>
+      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+        <p id="CV_button">CV</p>
+      </a>
+    </div>
+  </div>
+  <a class="contact_sidelink" href="#contact"> Contact Me! </a>
+  <div class="content">
+    <!-- Hero Section -->
+    <div class="hero__section">
+      <div class="hero__wrapper">
+        <div class="column__left">
+          <p id="hello">Hello, my name is </p>
+          <h1>Harry Daniels.</h1>
+          <p>I'm a self-taught software developer.</p>
+        </div>
+        <div class="column__right"></div>
+      </div>
+    </div>
+    <!-- About Me Section -->
+    <div id="about" class="about-me">
+      <div>
+        <h1 class="subt">About Me</h1>
+        <div>
+          <p>My name is Harry and I enjoy creating things that live on the internet. My interest in software development started during my Bachelor's in Chemical Engineering, when I was introduced to MATLAB as a tool for modelling simple engineering problems.</p>
+          <p>Since then, I have spent my evenings and weekends learning how to code. This website will tell you a little more about my journey and everything I've learnt along the way!</p>
+          <p>Here are a few technologies I've been working with recently:</p>
+          <ul class="skills">
+            <li>C</li>
+            <li>Javascript</li>
+            <li>SQL</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Netlify</li>
+            <li>Python</li>
+            <li>Jinja</li>
+          </ul>
+        </div>
+        <div class="picture-section">
+          <div class="picture-container">
+            <img class="portrait" src="portrait.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Experience Section -->
+    <div id="experience">
+      <h1 class="subt">Where I've Worked</h1>
+      <div class="job-card">
+        <div class="card">
+          <div class="tabs">
+            <button data-tab="1" class="tab active">Calfordseaden</button>
+            <button data-tab="2" class="tab">Iceland</button>
+            <button data-tab="3" class="tab">Random42</button>
+            <button data-tab="4" class="tab">Sussex FA</button>
+          </div>
+          <div class="tab-content">
+            <div data-tab="1" id="job1" class="tab-pane active">
+              <h3>Design Engineer <a href="https://calfordseaden.com" target="_blank">@ Calfordseaden</a></h3>
+              <h4> Sep 2021 - Present </h4>
+              <ul>
+                <li>Gained proficiency in using IES software to prepare thermal models, undertake heating and cooling load calculations and overheating analyses.</li>
+                <li>Performed calculations and evaluations in the design of equipment and systems in a wide range of projects.</li>
+                <li>Prepared high quality technical specifications, drawings and equipment schedules and survey reports. </li>
+              </ul>
+            </div>
+            <div data-tab="2" id="job2" class="tab-pane">
+              <h3>Home Delivery Driver <a href="https://about.iceland.co.uk" target="_blank">@ Iceland</a></h3>
+              <h4> June - Sep 2021 </h4>
+              <ul>
+                <li>Provided essential assistance to vulnerable people during the COVID-19 pandemic.</li>
+                <li>Loaded and delivered up to 14 orders per hour with an on-time delivery rate of 99%.</li>
+                <li>Mentored newly hired employees on machine operations and implemented training on safety procedures.</li>
+              </ul>
+            </div>
+            <div data-tab="3" id="job3" class="tab-pane">
+              <h3>Marketing Intern <a href="https://random42.com" target="_blank">@ Random42</a></h3>
+              <h4> Jun - Aug 2019 </h4>
+              <ul>
+                <li>Leveraged expertise in Excel to quickly sort and analyse large datasets of clients information.</li>
+                <li>Assisted the managements of various projects and client meetings, learning the principles or marketing and bid development.</li>
+              </ul>
+            </div>
+            <div data-tab="4" id="job4" class="tab-pane">
+              <h3>Football Referee <a href="https://www.sussexfa.com" target="_blank">@ Sussex FA</a></h3>
+              <h4>2014 - 2017</h4>
+              <ul>
+                <li>Facilitated gameplay by directing and instructing up to 22 players, whilst managing spectators in a fast-paced environment.</li>
+                <li>Utilised authority to cultivate a safe environment for healthy competition and mediate disciplinary issues.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project Section -->
+    <div id="projects" class="project_section">
+        <h1 class="subt">Things I've Built</h1>
+      <div class="carousel_container">
+        <div class="carousel">
+          <div class="item">
+            <div class="item_title">
+              <h1>Mock Trading App</h1>
+            </div>
+            <div class="item_content">
+              <div class="project_skills">
+                <h3>Tech Stack:</h3>
+                <ul>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/python.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/flask.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/css-3.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/html-5.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/sqlite.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/javascript.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/jquery.svg"></li>
+              </div>
+              <div class="project_description">
+                <p>Used Flask to create a mock trading account web app. The app first prompts the user to create an account. Once logged in, the user is gifted an imaginary $10,000 with which to "buy" and "sell" stocks. Live stock prices are used by querying the IEX API. From their account, the user can manage their portfolio, review their transaction history, or deposit more imaginary currency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_title">
+              <h1>Calculator App</h1>
+            </div>
+            <div class="item_content">
+              <div class="project_skills">
+                <h3>Tech Stack:</h3>
+                <ul>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/html-5.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/css-3.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/javascript.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/bootstrap.svg"></li>
+              </div>
+              <div class="project_description">
+                <p>This was built in practice of vanilla JavaScript and DOM manipulation. The app easily handles arithmetic opertions and has all of the functionality of a generic calculator. I used event listener methods to call specific functions based on user input. An intuitive design was created by styling a familiar user interface using CSS Grid.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_title">
+              <h1>Portfolio</h1>
+            </div>
+            <div class="item_content">
+              <div class="project_skills">
+                <h3>Tech Stack:</h3>
+                <ul>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/html-5.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/css-3.svg"></li>
+                  <li><img src="https://raw.githubusercontent.com/patil-prajwal/Tech-Stack-Icons/661b1305f52d49de94f6640f8bbeec93dba9dc8a/Icons/jquery.svg"></li>
+              </div>
+              <div class="project_description">
+                <p>This entire website was built from scratch. In order to best learn the basics of web development, I decided not to use any frameworks or libraries, so anything you see on this page (good or not-so-good) was designed and built by me in vanilla CSS and HTML. Dynamic elements were created with JQuery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact" class="contact_section">
+      <h1 class="subt">Get In Touch</h1>
+      <div class="contact_container">
+        <div class="screen">
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>Say</span>
+                <span>Hello</span>
+              </div>
+              <div class="socials">
+                <a href="https://www.linkedin.com/in/harrydaniels1/" target="_blank" rel="noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <title> LinkedIn </title>
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <circle cx="4" cy="4" r="2"></circle>
+                <rect x="2" y="9" width="4" height="12"></rect>
+              </svg>
+            </a>
+                <a href="https://codepen.io/harrycs" aria-label="Codepen" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img"  width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><title>CodePen</title><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a>
+              </div>
+            </div>
+            <div class="screen-body-item">
+              <form action="https://formspree.io/f/xzbwrwle" method="post">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input name ="name" class="app-form-control" placeholder="Name" required>
+                </div>
+                <div class="app-form-group">
+                  <input name ="email" type="email" class="app-form-control" placeholder="Email" required>
+                </div>
+                <div class="app-form-group message">
+                  <textarea name="message" class="app-form-control" placeholder="Message" required></textarea>
+                </div>
+                <div class="app-form-group buttons">
+                  <button type="submit" class="app-form-button">Send</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
