@@ -401,7 +401,7 @@ p {
 
 .tab-content {
   /*background-color: yellow;*/
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
   width: 100%;
   position: relative;
   color: var(--color-ivory);
