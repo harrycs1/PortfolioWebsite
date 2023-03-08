@@ -273,7 +273,7 @@ p {
 }
 
 .skills {
-  font-size: min(max(4vh, 22px), 13px);
+  font-size: min(max(4vh, 22px), 14px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 2vh;
@@ -285,7 +285,7 @@ p {
   display: block;
   margin: auto;
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .picture-container {
@@ -616,6 +616,10 @@ p {
   margin-right: auto;
   margin-left: auto;
   padding: 5% 0;
+}
+
+#mockTradingAppImage {
+  max-width: 100%;
 }
 
 
