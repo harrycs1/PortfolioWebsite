@@ -527,7 +527,7 @@ p {
 
 .item_title {
   background-color: var(--color-light-green);
-  width: 100%;
+  width: 105%;
   height: 15%;
   min-height: 70px;
   overflow-y: hidden;
