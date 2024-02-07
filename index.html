@@ -89,7 +89,7 @@
         <div class="column__left">
           <p id="hello">Hello, my name is </p>
           <h1>Harry Daniels.</h1>
-          <p>I'm a self-taught software developer.</p>
+          <p>I'm a software developer.</p>
         </div>
         <div class="column__right"></div>
       </div>
@@ -100,7 +100,9 @@
         <h1 class="subt">About Me</h1>
         <div>
           <p>My name is Harry and I enjoy creating things that live on the internet. My interest in software development started during my Bachelor's in Chemical Engineering, when I was introduced to MATLAB as a tool for modelling simple engineering problems.</p>
-          <p>Since then, I have spent my evenings and weekends learning how to code. This website will tell you a little more about my journey and everything I've learnt along the way!</p>
+          <p>My career trajectory recently underwent a transformative shift from mechanical design engineering to
+            software, driven by the realisation that my disciplined and logical approach to solving problems were highly transferrable to
+            the world of coding.</p>
           <p>Here are a few technologies I've been working with recently:</p>
           <ul class="skills">
             <li>C</li>
@@ -108,11 +110,11 @@
             <li>Javascript</li>
             <li>Python</li>
             <li>SQLite</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Netlify</li>
             <li>React</li>
-            <li>Jinja</li>
+            <li>PSQL</li>
+            <li>Next.js</li>
+            <li>Tailwind</li>
+            <li>Node.js</li>
           </ul>
         </div>
         <div class="picture-section">
@@ -128,15 +130,26 @@
       <div class="job-card">
         <div class="card">
           <div class="tabs">
-            <button data-tab="1" class="tab active">Calfordseaden</button>
+            <button data-tab="0" class="tab active">Northcoders</button>
+            <button data-tab="1" class="tab">Calfordseaden</button>
             <button data-tab="2" class="tab">Iceland</button>
             <button data-tab="3" class="tab">Random42</button>
             <button data-tab="4" class="tab">Sussex FA</button>
           </div>
           <div class="tab-content">
+            <div data-tab="0" id="job0" class="tab-pane active">
+              <h3>Trainee Software Developer <a href="https://northcoders.com/" target="_blank">@ Northcoders</a></h3>
+              <h4> Sep 2023 - Jan 2024 </h4>
+              <ul>
+                <li>A competitive coding bootcamp comprising 13 weeks of full-time education in full stack development.</li>
+                <li>Developed a range of projects both individually and as part of a team, utilising technical proficiency in a wide array of
+                  technologies and frameworks.</li>
+                <li>Engaged in collaborative projects and applied Paired Programming, debugging, and TDD, to optimise development.</li>
+              </ul>
+            </div>
             <div data-tab="1" id="job1" class="tab-pane active">
               <h3>Design Engineer <a href="https://calfordseaden.com" target="_blank">@ Calfordseaden</a></h3>
-              <h4> Sep 2021 - Present </h4>
+              <h4> Sep 2021 - Sep 2023 </h4>
               <ul>
                 <li>Gained proficiency in using IES software to prepare thermal models, undertake heating and cooling load calculations and overheating analyses.</li>
                 <li>Performed calculations and evaluations in the design of equipment and systems in a wide range of projects.</li>
@@ -179,11 +192,49 @@
         <div class="carousel">
           <div class="item">
             <div class="item_title">
+              <h1>Gym Tracker App</h1>
+            </div>
+            <div class="item_content">
+              <div class="project_image">
+                <img id="gymTrackerAppImage" class="appImage" src="gymApp.png">
+                <h4>Read More</h4>
+              </div>
+              <div class="project_description">
+                <ul>
+                  <li>Taking inspiration from Strava, this app merges workout tracking with a social community.</li>
+                  <li>RESTful API backend built with <b>Next.js</b>, and <b>PostgreSQL</b>.</li>
+                  <li>Frontend built with <b>React</b>, <b>Tailwind</b>, and <b>chartJS</b>.</li>
+                  <li><a href="https://github.com/harrycs1/gym-app" target="_blank">Link to GitHub</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_title">
+              <h1>Mock News App</h1>
+            </div>
+            <div class="item_content">
+              <div class="project_image">
+                <img class="appImage" src="newsApp.png">
+                <h4>Read More</h4>
+              </div>
+              <div class="project_description">
+                <ul>
+                  <li>An online platform for discussions and news spanning various topics.</li>
+                  <li>RESTful API backend built with <b>Node.js</b>, <b>Express.js</b>, and <b>PostgreSQL</b>.</li>
+                  <li>Frontend built with <b>React</b> and <b>Tailwind</b>.</li>
+                  <li><a href="https://github.com/harrycs1/fe-nc-news" target="_blank">Link to GitHub</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_title">
               <h1>Mock Trading App</h1>
             </div>
             <div class="item_content">
               <div class="project_image">
-                <img id="mockTradingAppImage" class="appImage" src="mockTradingApp.png">
+                <img id="mockTradingAppImage" class="appImage" src="mockTradingApp3.png">
                 <h4>Read More</h4>
               </div>
               <div class="project_description">
@@ -221,7 +272,7 @@
             </div>
             <div class="item_content">
               <div class="project_image">
-                <img class="appImage" src="calculatorApp.png">
+                <img id="calculatorAppImage" class="appImage" src="calculatorApp.png">
                 <h4>Read More</h4>
               </div>
               <div class="project_description">
@@ -229,7 +280,7 @@
                   <li>A custom calculator app that easily handles arithmetic operations. Built with <b>JavaScript</b>, <b>HTML</b>, and <b>CSS</b>.</li>
                   <li>Event listener methods handle <b>DOM manipulation</b>.</li>
                   <li>An intuitive design was created by styling a familiar user interface using <b>CSS Grid.</b></li>
-                  <li><a src="https://github.com/harrycs1/Calculator-App">Link to GitHub</a></li>
+                  <li><a href="https://github.com/harrycs1/Calculator-App">Link to GitHub</a></li>
                 </ul>
               </div>
             </div>
@@ -240,7 +291,7 @@
             </div>
             <div class="item_content">
               <div class="project_image">
-                <img class="appImage" src="bankingApp.png">
+                <img id="bankingAppImage" class="appImage" src="bankingApp.png">
                 <h4>Read More</h4>
               </div>
               <div class="project_description">
@@ -258,7 +309,7 @@
             </div>
             <div class="item_content">
               <div class="project_description" id="portfolioDescription">
-                <p>This entire website was built from scratch, by me. In order to best learn the basics of web development, I decided not to use any frameworks and so anything you see on this page (good or not-so-good) was designed and built in HTML and vanilla CSS. Dynamic elements were created with JavaScript and JQuery.</p>
+                <p>This entire website was built from scratch, by me. In order to best learn the basics of web development, I decided not to use any frameworks and so anything you see on this page was designed and built in HTML and vanilla CSS. Dynamic elements were created with JavaScript and JQuery.</p>
                 <br>
                 <p>If you would like to leave any comments or have any suggestions for this website, please message me from the form located at the bottom of this page. Thanks!</p>
               </div>
